@@ -140,6 +140,9 @@ cd cpu_baseline
 python3 cpu_baseline.py
 ```
 
+## Snap
+<img width="1619" height="860" alt="image" src="https://github.com/user-attachments/assets/52670100-ce85-4428-a2b3-eb4614d4cf62" />
+
 ---
 
 ## Expected Output (Example)
@@ -161,6 +164,9 @@ Latency Breakdown:
   Inference (CPU):     715.92 ms (98.2%)
   Postprocessing:      1.97 ms   ( 0.3%)
 ```
+
+## Snap 
+<img width="1627" height="912" alt="image" src="https://github.com/user-attachments/assets/78fcc85f-1aa0-433b-8185-a68b09846b69" />
 
 Key observations:
 1. **Inference dominates** (~98% of time) → main bottleneck targeted by FPGA/DPU  
