@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "ssd_mobilenet_v1_kv260.xmodel",
+    "kernel": [
+        "subgraph_BoxPredictor_0\/BoxEncodingPredictor\/Conv2D"
+    ],
+    "target": "DPUCZDX8G_ISA1_B4096"
+}
