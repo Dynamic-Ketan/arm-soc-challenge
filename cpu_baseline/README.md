@@ -22,6 +22,59 @@ This is the **software-only CPU baseline** for the project. Before any FPGA/DPU 
 
 ---
 
+## Directory Structure
+
+```text
+2_cpu_baseline/
+├── cpu_baseline.py
+├── README.md
+├── ssd_mobilenet_v2_coco_2018_03_29.pbtxt
+├── ssd_mobilenet_v2_coco_2018_03_29/
+│   ├── frozen_inference_graph.pb
+│   ├── pipeline.config
+│   ├── checkpoint
+│   ├── model.ckpt.*
+│   └── saved_model/
+│       └── saved_model.pb
+└── cpu_results/
+    ├── cpu_latency.csv
+    ├── cpu_report.txt
+    ├── cpu_results.json
+    └── frames/
+        ├── frame_001.jpg
+        ├── frame_002.jpg
+        └── ... frame_100.jpg
+```
+
+---
+
+## What Each Item Is
+
+### `cpu_baseline.py`
+Main script that:
+- opens the USB camera
+- runs preprocessing → **CPU inference** → postprocessing for ~100 frames
+- measures per-stage latency
+- saves reports + annotated frames
+
+### Model files
+- `ssd_mobilenet_v2_coco_2018_03_29/frozen_inference_graph.pb`  
+  **The FP32 TensorFlow frozen graph** used by OpenCV DNN.
+- `ssd_mobilenet_v2_coco_2018_03_29.pbtxt`  
+  OpenCV DNN graph configuration for the `.pb` model.
+- Other files in `ssd_mobilenet_v2_coco_2018_03_29/` (`checkpoint`, `model.ckpt.*`, `saved_model/`, `pipeline.config`)  
+  Included from the TensorFlow Model Zoo package; **not all are required** for OpenCV inference, but they’re kept for completeness.
+
+### Output folder: `cpu_results/`
+Generated after running the benchmark:
+- `cpu_report.txt` — human-readable summary (average FPS, latency breakdown)
+- `cpu_results.json` — full structured results for plotting/automation
+- `cpu_latency.csv` — per-frame latency values (easy for Excel / pandas)
+- `frames/` — annotated frames (bounding boxes + FPS overlay)
+
+---
+
+
 ## How It Fits Into the Project
 - **Step 1 (this):** CPU baseline (OpenCV DNN on ARM)
 - **Step 2:** Quantize + compile (FP32 → INT8 → `xmodel`)
