@@ -89,7 +89,7 @@ This repository is organized as a 3-step pipeline so that results are reproducib
 .
 ├── README.md                          ← You are here
 │
-├── 2_cpu_baseline/                    ← Step 1: software-only baseline
+├── cpu_baseline/                    ← Step 1: software-only baseline
 │   ├── cpu_baseline.py                ← OpenCV DNN (FP32) on ARM CPU
 │   ├── README.md
 │   ├── ssd_mobilenet_v2_coco_2018_03_29/
@@ -98,12 +98,12 @@ This repository is organized as a 3-step pipeline so that results are reproducib
 │   ├── ssd_mobilenet_v2_coco_2018_03_29.pbtxt
 │   └── cpu_results/                   ← generated outputs (report/CSV/frames)
 │
-├── 3_model_conversion/                ← Step 2: quantize + compile to xmodel
+├── model_conversion/                ← Step 2: quantize + compile to xmodel
 │   ├── README.md
 │   ├── compiled_model/                ← output .xmodel + metadata
 │   └── logs/                          ← compiler/quantization logs
 │
-└── 4_dpu_inference/                   ← Step 3: accelerated inference on DPU
+└── dpu_inference/                   ← Step 3: accelerated inference on DPU
     ├── dpu_inference.py               ← benchmark + detection + report
     ├── test_images/                   ← input JPEGs for detection tests
     └── results/                       ← generated outputs (report/CSV/frames)
