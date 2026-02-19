@@ -1,0 +1,28 @@
+CPU BASELINE PERFORMANCE REPORT
+
+============================================================
+CPU BASELINE PERFORMANCE REPORT
+============================================================
+Date:                  2026-02-18 23:20:26
+Model:                 SSD MobileNet V2 (COCO)
+Platform:              ARM Cortex-A53 (CPU only)
+Camera:                1280x960
+Total Frames:          100
+Total Time:            73.6 seconds
+Average Latency:       687.61 +/- 24.69 ms
+Min Latency:           667.40 ms
+Max Latency:           923.60 ms
+Average FPS:           1.45
+------------------------------------------------------------
+Latency Breakdown:
+  Preprocessing:       10.18 ms (1.5%)
+  Inference (CPU):     674.64 ms (98.1%)
+  Postprocessing:      2.00 ms (0.3%)
+------------------------------------------------------------
+Total Detections:      179
+Avg Detections/Frame:  1.79
+------------------------------------------------------------
+Objects Detected:
+  person              :  105  ##############################
+  chair               :   74  ##############################
+============================================================

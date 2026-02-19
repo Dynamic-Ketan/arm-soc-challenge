@@ -1,0 +1,1000 @@
+{
+  "metadata": {
+    "date": "2026-02-18 23:20:26",
+    "model": "SSD MobileNet V2 (COCO)",
+    "platform": "ARM Cortex-A53 (CPU only)",
+    "board": "Kria KV260",
+    "camera": "1280x960",
+    "num_frames": 100,
+    "conf_threshold": 0.5
+  },
+  "performance": {
+    "avg_latency": 687.6075887680054,
+    "std_latency": 24.694823112778405,
+    "min_latency": 667.4017906188965,
+    "max_latency": 923.5959053039551,
+    "avg_fps": 1.4543178643384547,
+    "avg_preprocess": 10.17894983291626,
+    "avg_inference": 674.6420669555664,
+    "avg_postprocess": 1.9964385032653809,
+    "total_frames": 100,
+    "total_detections": 179,
+    "avg_detections": 1.79,
+    "max_detections": 4
+  },
+  "detection_summary": {
+    "person": 105,
+    "chair": 74
+  },
+  "per_frame": [
+    {
+      "frame": 1,
+      "latency_ms": 923.6,
+      "fps": 1.08,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 2,
+      "latency_ms": 699.14,
+      "fps": 1.43,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 3,
+      "latency_ms": 692.8,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 4,
+      "latency_ms": 675.75,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 5,
+      "latency_ms": 681.7,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 6,
+      "latency_ms": 683.88,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 7,
+      "latency_ms": 683.33,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 8,
+      "latency_ms": 679.61,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 9,
+      "latency_ms": 687.6,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 10,
+      "latency_ms": 675.79,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 11,
+      "latency_ms": 685.21,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 12,
+      "latency_ms": 682.53,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 13,
+      "latency_ms": 677.42,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 14,
+      "latency_ms": 690.94,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 15,
+      "latency_ms": 684.61,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 16,
+      "latency_ms": 691.14,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 17,
+      "latency_ms": 688.72,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 18,
+      "latency_ms": 690.31,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 19,
+      "latency_ms": 691.79,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 20,
+      "latency_ms": 685.53,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 21,
+      "latency_ms": 678.07,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 22,
+      "latency_ms": 683.81,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 23,
+      "latency_ms": 695.45,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 24,
+      "latency_ms": 681.85,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 25,
+      "latency_ms": 677.21,
+      "fps": 1.48,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 26,
+      "latency_ms": 687.19,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 27,
+      "latency_ms": 682.6,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 28,
+      "latency_ms": 667.4,
+      "fps": 1.5,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 29,
+      "latency_ms": 673.61,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 30,
+      "latency_ms": 684.59,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 31,
+      "latency_ms": 688.3,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 32,
+      "latency_ms": 687.32,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 33,
+      "latency_ms": 680.47,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 34,
+      "latency_ms": 683.97,
+      "fps": 1.46,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 35,
+      "latency_ms": 689.05,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 36,
+      "latency_ms": 691.53,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 37,
+      "latency_ms": 683.37,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 38,
+      "latency_ms": 679.06,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 39,
+      "latency_ms": 693.83,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 40,
+      "latency_ms": 674.19,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 41,
+      "latency_ms": 679.14,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 42,
+      "latency_ms": 680.02,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 43,
+      "latency_ms": 690.86,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 44,
+      "latency_ms": 681.62,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 45,
+      "latency_ms": 676.93,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 46,
+      "latency_ms": 688.54,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 47,
+      "latency_ms": 688.27,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 48,
+      "latency_ms": 693.54,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 49,
+      "latency_ms": 689.24,
+      "fps": 1.45,
+      "detections": 3,
+      "objects": [
+        "person",
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 50,
+      "latency_ms": 686.38,
+      "fps": 1.46,
+      "detections": 3,
+      "objects": [
+        "person",
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 51,
+      "latency_ms": 692.83,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 52,
+      "latency_ms": 673.7,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 53,
+      "latency_ms": 684.78,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 54,
+      "latency_ms": 688.34,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 55,
+      "latency_ms": 692.05,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 56,
+      "latency_ms": 684.03,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 57,
+      "latency_ms": 687.77,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 58,
+      "latency_ms": 699.64,
+      "fps": 1.43,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 59,
+      "latency_ms": 684.15,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 60,
+      "latency_ms": 672.35,
+      "fps": 1.49,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 61,
+      "latency_ms": 681.91,
+      "fps": 1.47,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 62,
+      "latency_ms": 683.13,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 63,
+      "latency_ms": 692.54,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 64,
+      "latency_ms": 685.58,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 65,
+      "latency_ms": 671.65,
+      "fps": 1.49,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 66,
+      "latency_ms": 683.85,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 67,
+      "latency_ms": 712.93,
+      "fps": 1.4,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 68,
+      "latency_ms": 674.42,
+      "fps": 1.48,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 69,
+      "latency_ms": 678.38,
+      "fps": 1.47,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 70,
+      "latency_ms": 691.59,
+      "fps": 1.45,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 71,
+      "latency_ms": 685.18,
+      "fps": 1.46,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 72,
+      "latency_ms": 687.34,
+      "fps": 1.45,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 73,
+      "latency_ms": 678.19,
+      "fps": 1.47,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 74,
+      "latency_ms": 689.57,
+      "fps": 1.45,
+      "detections": 4,
+      "objects": [
+        "person",
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 75,
+      "latency_ms": 682.78,
+      "fps": 1.46,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 76,
+      "latency_ms": 691.3,
+      "fps": 1.45,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 77,
+      "latency_ms": 686.62,
+      "fps": 1.46,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 78,
+      "latency_ms": 686.02,
+      "fps": 1.46,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 79,
+      "latency_ms": 687.62,
+      "fps": 1.45,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 80,
+      "latency_ms": 687.21,
+      "fps": 1.46,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 81,
+      "latency_ms": 678.65,
+      "fps": 1.47,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 82,
+      "latency_ms": 689.96,
+      "fps": 1.45,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 83,
+      "latency_ms": 692.26,
+      "fps": 1.44,
+      "detections": 3,
+      "objects": [
+        "person",
+        "chair",
+        "chair"
+      ]
+    },
+    {
+      "frame": 84,
+      "latency_ms": 676.33,
+      "fps": 1.48,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 85,
+      "latency_ms": 683.12,
+      "fps": 1.46,
+      "detections": 2,
+      "objects": [
+        "person",
+        "chair"
+      ]
+    },
+    {
+      "frame": 86,
+      "latency_ms": 680.21,
+      "fps": 1.47,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 87,
+      "latency_ms": 688.43,
+      "fps": 1.45,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 88,
+      "latency_ms": 679.37,
+      "fps": 1.47,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 89,
+      "latency_ms": 678.6,
+      "fps": 1.47,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 90,
+      "latency_ms": 681.94,
+      "fps": 1.47,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 91,
+      "latency_ms": 688.54,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 92,
+      "latency_ms": 693.8,
+      "fps": 1.44,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 93,
+      "latency_ms": 673.05,
+      "fps": 1.49,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 94,
+      "latency_ms": 690.95,
+      "fps": 1.45,
+      "detections": 0,
+      "objects": []
+    },
+    {
+      "frame": 95,
+      "latency_ms": 690.82,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 96,
+      "latency_ms": 688.3,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 97,
+      "latency_ms": 689.76,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 98,
+      "latency_ms": 687.72,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    },
+    {
+      "frame": 99,
+      "latency_ms": 691.31,
+      "fps": 1.45,
+      "detections": 2,
+      "objects": [
+        "person",
+        "person"
+      ]
+    },
+    {
+      "frame": 100,
+      "latency_ms": 691.44,
+      "fps": 1.45,
+      "detections": 1,
+      "objects": [
+        "person"
+      ]
+    }
+  ]
+}

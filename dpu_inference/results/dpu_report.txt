@@ -1,0 +1,91 @@
+============================================================
+HARDWARE-ACCELERATED CNN INFERENCE
+PERFORMANCE REPORT
+============================================================
+
+Date:        2026-02-19 00:20:51
+Platform:    Kria KV260 (Zynq UltraScale+ MPSoC)
+CPU:         ARM Cortex-A53 @ 1.2 GHz (quad-core)
+DPU:         DPUCZDX8G @ 300 MHz
+DPU Arch:    DPUCZDX8G_ISA0_B4096_MAX_BG2
+Fingerprint: 0x1000020f6014407
+Framework:   Vitis-AI 1.4
+
+============================================================
+CPU BASELINE (ARM Cortex-A53 + OpenCV DNN)
+============================================================
+Model:          SSD MobileNet V2 (COCO)
+Input:          Live Camera (1280x960)
+Frames:         100
+FPS:            1.37
+Latency:        728.73 ms
+  Preprocess:   10.21 ms (1.4%)
+  Inference:    715.92 ms (98.2%)
+  Postprocess:  1.97 ms (0.3%)
+Objects:        person(120), chair(112)
+
+============================================================
+DPU ACCELERATED (FPGA + Vitis-AI)
+============================================================
+
+Model                            Thrd      FPS    E2E(ms)    DPU(ms)    Speedup
+---------------------------------------------------------------------------
+ssd_mobilenet_v2                    1    26.13      38.23      16.11      19.1x
+ssd_mobilenet_v2                    4    61.45       0.00       0.00      44.9x
+ssd_adas_pruned_0_95                1    91.67      10.90       8.47      66.9x
+ssd_adas_pruned_0_95                4   118.40       0.00       0.00      86.4x
+resnet50                            1    73.57      13.58      12.96      53.7x
+resnet50                            4    77.32       0.00       0.00      56.4x
+
+============================================================
+KEY COMPARISON (SSD MobileNet V2, single-thread)
+============================================================
+
+  Metric                             CPU          DPU    Speedup
+  ------------------------------------------------------------
+  FPS                               1.37        26.13      19.1x
+  E2E Latency (ms)                728.73        38.23      19.1x
+  Pure Inference (ms)             715.92        16.11      44.4x
+
+============================================================
+DPU IMAGE DETECTION RESULTS
+============================================================
+
+Model: ssd_mobilenet_v2
+  Images:     6
+  Detections: 29
+    camera_001.jpg: class_3(56%)
+    camera_002.jpg: class_3(37%), class_4(41%), class_4(40%)
+    camera_003.jpg: class_3(43%), class_4(46%)
+    camera_004.jpg: class_4(68%), class_4(42%)
+    camera_005.jpg: class_4(76%), class_4(55%)
+    sample_ssd.jpg: class_3(100%), class_3(100%), class_3(98%), class_3(97%)
+
+Model: ssd_adas_pruned_0_95
+  Images:     6
+  Detections: 14
+    camera_001.jpg: class_1(63%)
+    camera_002.jpg: class_1(74%)
+    camera_003.jpg: class_1(74%)
+    camera_004.jpg: class_1(74%)
+    camera_005.jpg: class_1(63%)
+    sample_ssd.jpg: class_1(99%), class_1(99%), class_1(95%), class_1(94%)
+
+============================================================
+CONCLUSION
+============================================================
+
+  Project Requirement:     2x speedup minimum
+  Achieved (1-thread):     19.1x - 66.9x
+  Best FPS:                118.40 (multi-threaded)
+  Status:                  SUCCESS!
+
+  HW/SW Co-design:
+    - ARM CPU: preprocessing, postprocessing, control
+    - FPGA DPU: CNN inference (INT8 quantized xmodel)
+
+  FPGA DPU enables real-time inference (118 FPS)
+  vs CPU-only (1.37 FPS), achieving 19.1x-66.9x
+  speedup on embedded edge hardware.
+
+============================================================

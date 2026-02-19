@@ -1,0 +1,7 @@
+model,threads,fps,e2e_ms,dpu_ms,speedup
+ssd_mobilenet_v2,1,26.13,38.23,16.11,19.1
+ssd_mobilenet_v2,4,61.45,0.00,0.00,44.9
+ssd_adas_pruned_0_95,1,91.67,10.90,8.47,66.9
+ssd_adas_pruned_0_95,4,118.40,0.00,0.00,86.4
+resnet50,1,73.57,13.58,12.96,53.7
+resnet50,4,77.32,0.00,0.00,56.4

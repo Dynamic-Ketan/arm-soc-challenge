@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "date": "2026-02-19 00:20:51",
+    "platform": "Kria KV260 (Zynq UltraScale+ MPSoC)",
+    "cpu": "ARM Cortex-A53 @ 1.2 GHz",
+    "dpu": "DPUCZDX8G @ 300 MHz",
+    "dpu_arch": "DPUCZDX8G_ISA0_B4096_MAX_BG2",
+    "fingerprint": "0x1000020f6014407",
+    "framework": "Vitis-AI 1.4"
+  },
+  "cpu_baseline": {
+    "model": "SSD MobileNet V2 (COCO)",
+    "platform": "ARM Cortex-A53 @ 1.2 GHz",
+    "input": "Live Camera (1280x960)",
+    "num_frames": 100,
+    "avg_fps": 1.37,
+    "avg_latency": 728.73,
+    "avg_inference": 715.92,
+    "avg_preprocess": 10.21,
+    "avg_postprocess": 1.97,
+    "objects": {
+      "person": 120,
+      "chair": 112
+    }
+  },
+  "dpu_benchmarks": [
+    {
+      "model": "ssd_mobilenet_v2",
+      "threads": 1,
+      "duration_s": 30,
+      "fps": 26.1312,
+      "e2e_mean_ms": 38.23,
+      "dpu_mean_ms": 16.11,
+      "status": "success"
+    },
+    {
+      "model": "ssd_mobilenet_v2",
+      "threads": 4,
+      "duration_s": 30,
+      "fps": 61.4506,
+      "e2e_mean_ms": 0,
+      "dpu_mean_ms": 0,
+      "status": "success"
+    },
+    {
+      "model": "ssd_adas_pruned_0_95",
+      "threads": 1,
+      "duration_s": 30,
+      "fps": 91.6687,
+      "e2e_mean_ms": 10.9,
+      "dpu_mean_ms": 8.47,
+      "status": "success"
+    },
+    {
+      "model": "ssd_adas_pruned_0_95",
+      "threads": 4,
+      "duration_s": 30,
+      "fps": 118.399,
+      "e2e_mean_ms": 0,
+      "dpu_mean_ms": 0,
+      "status": "success"
+    },
+    {
+      "model": "resnet50",
+      "threads": 1,
+      "duration_s": 30,
+      "fps": 73.5712,
+      "e2e_mean_ms": 13.58,
+      "dpu_mean_ms": 12.96,
+      "status": "success"
+    },
+    {
+      "model": "resnet50",
+      "threads": 4,
+      "duration_s": 30,
+      "fps": 77.3203,
+      "e2e_mean_ms": 0,
+      "dpu_mean_ms": 0,
+      "status": "success"
+    }
+  ],
+  "image_detection": {
+    "ssd_mobilenet_v2": {
+      "total_images": 6,
+      "total_detections": 29,
+      "avg_latency_ms": 473.5,
+      "per_image": [
+        {
+          "image": "camera_001.jpg",
+          "latency_ms": 478.64,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 3,
+              "confidence": 0.561,
+              "box": [
+                449,
+                150,
+                942,
+                900
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_002.jpg",
+          "latency_ms": 476.62,
+          "detections": 3,
+          "details": [
+            {
+              "class_id": 3,
+              "confidence": 0.373,
+              "box": [
+                437,
+                162,
+                943,
+                912
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.407,
+              "box": [
+                38,
+                47,
+                798,
+                952
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.397,
+              "box": [
+                437,
+                162,
+                943,
+                912
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_003.jpg",
+          "latency_ms": 480.33,
+          "detections": 2,
+          "details": [
+            {
+              "class_id": 3,
+              "confidence": 0.428,
+              "box": [
+                413,
+                195,
+                931,
+                926
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.456,
+              "box": [
+                344,
+                194,
+                951,
+                953
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_004.jpg",
+          "latency_ms": 478.79,
+          "detections": 2,
+          "details": [
+            {
+              "class_id": 4,
+              "confidence": 0.683,
+              "box": [
+                28,
+                26,
+                827,
+                954
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.422,
+              "box": [
+                418,
+                195,
+                950,
+                926
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_005.jpg",
+          "latency_ms": 476.08,
+          "detections": 2,
+          "details": [
+            {
+              "class_id": 4,
+              "confidence": 0.757,
+              "box": [
+                0,
+                30,
+                799,
+                935
+              ]
+            },
+            {
+              "class_id": 4,
+              "confidence": 0.551,
+              "box": [
+                413,
+                195,
+                931,
+                926
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sample_ssd.jpg",
+          "latency_ms": 450.56,
+          "detections": 19,
+          "details": [
+            {
+              "class_id": 3,
+              "confidence": 0.998,
+              "box": [
+                633,
+                318,
+                798,
+                519
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.997,
+              "box": [
+                7,
+                310,
+                199,
+                595
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.981,
+              "box": [
+                556,
+                333,
+                640,
+                383
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.968,
+              "box": [
+                178,
+                329,
+                291,
+                423
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.957,
+              "box": [
+                462,
+                317,
+                515,
+                360
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.955,
+              "box": [
+                506,
+                331,
+                559,
+                370
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.841,
+              "box": [
+                446,
+                322,
+                471,
+                351
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.832,
+              "box": [
+                261,
+                319,
+                308,
+                365
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.784,
+              "box": [
+                420,
+                325,
+                444,
+                345
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.703,
+              "box": [
+                319,
+                326,
+                333,
+                345
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.664,
+              "box": [
+                388,
+                326,
+                400,
+                337
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.612,
+              "box": [
+                303,
+                320,
+                321,
+                357
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.61,
+              "box": [
+                400,
+                326,
+                416,
+                339
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.466,
+              "box": [
+                440,
+                325,
+                456,
+                347
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.433,
+              "box": [
+                326,
+                324,
+                336,
+                337
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.417,
+              "box": [
+                331,
+                326,
+                340,
+                336
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.373,
+              "box": [
+                364,
+                328,
+                374,
+                335
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.345,
+              "box": [
+                379,
+                328,
+                387,
+                335
+              ]
+            },
+            {
+              "class_id": 3,
+              "confidence": 0.306,
+              "box": [
+                413,
+                326,
+                429,
+                343
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ssd_adas_pruned_0_95": {
+      "total_images": 6,
+      "total_detections": 14,
+      "avg_latency_ms": 265.56,
+      "per_image": [
+        {
+          "image": "camera_001.jpg",
+          "latency_ms": 269.48,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.626,
+              "box": [
+                0,
+                59,
+                801,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_002.jpg",
+          "latency_ms": 270.48,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.735,
+              "box": [
+                0,
+                80,
+                801,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_003.jpg",
+          "latency_ms": 270.14,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.735,
+              "box": [
+                7,
+                68,
+                811,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_004.jpg",
+          "latency_ms": 269.73,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.735,
+              "box": [
+                7,
+                59,
+                831,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "image": "camera_005.jpg",
+          "latency_ms": 270.42,
+          "detections": 1,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.626,
+              "box": [
+                7,
+                59,
+                831,
+                960
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sample_ssd.jpg",
+          "latency_ms": 243.09,
+          "detections": 9,
+          "details": [
+            {
+              "class_id": 1,
+              "confidence": 0.993,
+              "box": [
+                627,
+                318,
+                800,
+                510
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.993,
+              "box": [
+                0,
+                306,
+                197,
+                590
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.954,
+              "box": [
+                460,
+                318,
+                517,
+                359
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.941,
+              "box": [
+                173,
+                327,
+                290,
+                420
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.882,
+              "box": [
+                507,
+                329,
+                562,
+                370
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.819,
+              "box": [
+                443,
+                322,
+                472,
+                351
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.819,
+              "box": [
+                552,
+                333,
+                650,
+                386
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.682,
+              "box": [
+                400,
+                326,
+                418,
+                340
+              ]
+            },
+            {
+              "class_id": 1,
+              "confidence": 0.678,
+              "box": [
+                281,
+                315,
+                321,
+                366
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
