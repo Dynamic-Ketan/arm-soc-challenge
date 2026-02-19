@@ -1,0 +1,21 @@
+[INFO] Namespace(batchsize=1, inputs_shape=None, layout='NHWC', model_files=['tf_ssdmobilenetv1_3.5/quantized/quantize_eval_model.pb'], model_type='tensorflow', named_inputs_shape=None, out_filename='/tmp/ssd_mobilenet_v1_kv260_DPUCZDX8G_ISA1_B4096_org.xmodel', proto=None)
+[INFO] tensorflow model: /workspace/fpga_arm/ssd_mobilenet_v1_project/tf_ssdmobilenetv1_3.5/quantized/quantize_eval_model.pb
+[INFO] parse raw model     :  0%|          | 0/161 [00:00<?, ?it/s]                          [INFO] parse raw model     :100%|██████████| 161/161 [00:00<00:00, 33757.40it/s]             
+[INFO] infer shape (NHWC)  :  0%|          | 0/269 [00:00<?, ?it/s]                          [INFO] infer shape (NHWC)  :100%|██████████| 269/269 [00:00<00:00, 3863.47it/s]              
+[INFO] perform level-0 opt :  0%|          | 0/3 [00:00<?, ?it/s]                            [INFO] perform level-0 opt :100%|██████████| 3/3 [00:00<00:00, 641.79it/s]                   
+[INFO] perform level-1 opt :  0%|          | 0/7 [00:00<?, ?it/s]                            [INFO] perform level-1 opt :100%|██████████| 7/7 [00:00<00:00, 655.62it/s]                   
+[INFO] generate xmodel     :  0%|          | 0/173 [00:00<?, ?it/s]                          [INFO] generate xmodel     :100%|██████████| 173/173 [00:00<00:00, 4242.67it/s]              
+[INFO] dump xmodel ...[INFO] dump xmodel: /tmp/ssd_mobilenet_v1_kv260_DPUCZDX8G_ISA1_B4096_org.xmodel
+[UNILOG][INFO] Compile mode: dpu
+[UNILOG][INFO] Debug mode: function
+[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA1_B4096
+[UNILOG][INFO] Graph name: quantize_eval_model, with op num: 361
+[UNILOG][INFO] Begin to compile...
+[UNILOG][INFO] Total device subgraph number 4, DPU subgraph number 1
+[UNILOG][INFO] Compile done.
+[UNILOG][INFO] The meta json is saved to "/workspace/fpga_arm/ssd_mobilenet_v1_project/./build/compiled_model/meta.json"
+[UNILOG][INFO] The compiled xmodel is saved to "/workspace/fpga_arm/ssd_mobilenet_v1_project/./build/compiled_model/ssd_mobilenet_v1_kv260.xmodel"
+[UNILOG][INFO] The compiled xmodel's md5sum is 1cb2b425053ba71b1fe7dd467addcf23, and has been saved to "/workspace/fpga_arm/ssd_mobilenet_v1_project/./build/compiled_model/md5sum.txt"
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
