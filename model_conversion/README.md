@@ -34,9 +34,8 @@ Vitis-AI /workspace >
 ## Step 3: Activate TensorFlow Environment
 ```
 conda activate vitis-ai-tensorflow
-```
-
 (vitis-ai-tensorflow) Vitis-AI /workspace >
+```
 
 ## Snap
 
