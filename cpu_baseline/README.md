@@ -136,7 +136,7 @@ Ensure the OpenCV config file is present:
 
 ### 3) Run benchmark
 ```bash
-cd arm-soc-challenge
+cd cpu_baseline
 python3 cpu_baseline.py
 ```
 
