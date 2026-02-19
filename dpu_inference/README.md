@@ -83,6 +83,9 @@ mkdir -p test_images
 python3 dpu_inference.py
 ```
 
+## Snap
+<img width="1621" height="324" alt="image" src="https://github.com/user-attachments/assets/f5e0ce12-1db7-4c94-87ba-83bff40955bd" />
+
 ### Manual benchmark examples (optional)
 ```bash
 # SSD benchmark
@@ -105,6 +108,9 @@ ssd_mobilenet_v2 (1 thread):  26.13 FPS, 38.23 ms E2E, 16.11 ms DPU  -> 19.1× E
 ssd_mobilenet_v2 (4 thread):  61.45 FPS                              -> 44.9× throughput speedup
 ssd_adas_pruned_0_95 (4 thr): 118.40 FPS                              -> 86.4× throughput speedup
 ```
+
+## Snap
+<img width="1699" height="903" alt="image" src="https://github.com/user-attachments/assets/3ad043de-1e51-4c05-b0ec-ea3b4d46e518" />
 
 Notes:
 - “Pure inference” speedup is larger than E2E speedup because **pre/post + DPU I/O overhead** still runs on CPU.
