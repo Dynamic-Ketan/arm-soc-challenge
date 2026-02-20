@@ -67,6 +67,10 @@ At a system level, KV260 is split into two domains:
     └─────────┘
 ```
 
+## Setup
+<img width="815" height="611" alt="image" src="https://github.com/user-attachments/assets/b5e3a280-94d5-4bd1-ada9-4be759623826" />
+
+
 ### What runs where (practical view)
 
 | Stage | Runs on | Why |
